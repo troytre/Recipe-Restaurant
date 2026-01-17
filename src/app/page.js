@@ -35,7 +35,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-transparent p-6 sm:p-10">
             <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight">
-              Globalel Recipe Restaurant
+              Globalelelelelelel Recipe Restaurant
             </h1>
             <p className="opacity-80 mt-3 max-w-2xl text-sm sm:text-base">
               Explore top dishes from every continent. Ingredient-based ratings, clean UI, mobile-first.
