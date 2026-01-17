@@ -149,12 +149,13 @@ export default async function DishPage({ params }) {
               <p className="opacity-70 text-sm">🎬 Premium video preview locked</p>
             </div>
 
-            <button
-              className="mt-4 w-full sm:w-auto px-5 py-3 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition"
-              onClick={() => alert("Payment integration coming next ✅")}
-            >
-              Unlock Video →
-            </button>
+            <Link
+  href="/premium"
+  className="mt-4 inline-block w-full sm:w-auto px-5 py-3 rounded-2xl bg-white text-black font-semibold hover:opacity-90 transition text-center"
+>
+  Unlock Video →
+</Link>
+
 
             <p className="text-xs opacity-60 mt-2">
               (Next step: Razorpay / UPI payment integration)
