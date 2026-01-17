@@ -1,256 +1,347 @@
 // src/data/dishes.js
+// ✅ VEG-ONLY + FULL RECIPES + PREMIUM AI VIDEO LOCK (Ready to paste)
 
 export const dishes = [
-  // 🌏 ASIA (10)
+  // =========================
+  // 🌏 ASIA (VEG)
+  // =========================
+
   {
-    slug: "biryani",
-    name: "Biryani",
-    continent: "asia",
-    country: "India",
-    time: "60-90 mins",
-    servings: "2-4",
-    ingredients: ["Basmati rice", "Chicken/Mutton", "Yogurt", "Fried onions", "Garam masala", "Mint", "Saffron"],
-    taste: ["Spicy", "Aromatic", "Savory"],
-    rating: 4.2,
-    intro:
-      "Biryani is a layered rice dish cooked with spices, herbs, and slow-cooked meat for an aromatic and satisfying meal.",
-    caloriesNote: "High energy meal, best with raita",
-    tips: ["Use aged basmati for aroma", "Seal the pot for dum cooking", "Rest 10 mins before serving"],
-    faq: [
-      { q: "Is biryani spicy?", a: "It can be mild to hot depending on spice level." },
-      { q: "What goes best with biryani?", a: "Raita, salad, and a tangy pickle pair well." },
-    ],
-  },
-  {
-    slug: "sushi",
-    name: "Sushi",
-    continent: "asia",
-    country: "Japan",
-    time: "45-60 mins",
-    servings: "2-3",
-    ingredients: ["Sushi rice", "Nori", "Vinegar", "Fresh fish", "Cucumber", "Avocado", "Soy sauce"],
-    taste: ["Umami", "Fresh", "Light"],
-    rating: 4.6,
-    intro:
-      "Sushi combines vinegared rice with seafood and vegetables, known for its clean flavors and artistic presentation.",
-    caloriesNote: "Light and protein-friendly if fish-based",
-    tips: ["Keep hands wet while rolling", "Use fresh fish", "Don’t overpack rolls"],
-    faq: [
-      { q: "Is sushi always raw?", a: "No. Many sushi types use cooked seafood or vegetables." },
-      { q: "Is sushi healthy?", a: "Generally yes, especially with lean fish and balanced sides." },
-    ],
-  },
-  {
-    slug: "ramen",
-    name: "Ramen",
-    continent: "asia",
-    country: "Japan",
-    time: "40-70 mins",
-    servings: "2",
-    ingredients: ["Noodles", "Broth", "Soy sauce/miso", "Egg", "Chicken/pork", "Spring onion", "Seaweed"],
-    taste: ["Savory", "Comforting", "Umami"],
-    rating: 4.4,
-    intro:
-      "Ramen is a hearty noodle soup built on rich broth, topped with protein, egg, and aromatic garnishes.",
-    caloriesNote: "Heavier if fatty broth is used",
-    tips: ["Simmer broth longer for depth", "Soft-boil egg for topping", "Use fresh noodles if possible"],
-    faq: [
-      { q: "Which ramen is best for beginners?", a: "Shoyu ramen is a great balanced start." },
-      { q: "Can ramen be vegetarian?", a: "Yes, with vegetable or miso-based broths." },
-    ],
-  },
-  {
-    slug: "pad-thai",
-    name: "Pad Thai",
+    slug: "pad-thai-veg",
+    name: "Pad Thai (Veg)",
     continent: "asia",
     country: "Thailand",
     time: "20-30 mins",
     servings: "2",
-    ingredients: ["Rice noodles", "Tamarind", "Egg", "Tofu/Chicken", "Peanuts", "Bean sprouts", "Fish sauce"],
+    ingredients: [
+      "Rice noodles",
+      "Tofu",
+      "Tamarind paste",
+      "Soy sauce",
+      "Brown sugar/jaggery",
+      "Garlic",
+      "Bean sprouts",
+      "Peanuts",
+      "Spring onion",
+      "Lime",
+      "Chili flakes (optional)",
+    ],
     taste: ["Sweet", "Tangy", "Savory"],
-    rating: 4.3,
-    intro:
-      "Pad Thai is Thailand’s iconic stir-fried noodle dish with a perfect mix of sweet, tangy, and savory flavors.",
-    caloriesNote: "Balanced meal, watch peanut portion",
-    tips: ["Soak noodles, don’t boil", "Cook on high heat quickly", "Add peanuts last for crunch"],
-    faq: [
-      { q: "Is Pad Thai spicy?", a: "It’s usually mild but can be made spicy with chili flakes." },
-      { q: "What protein works best?", a: "Shrimp, tofu, or chicken are popular options." },
-    ],
-  },
-  {
-    slug: "butter-chicken",
-    name: "Butter Chicken",
-    continent: "asia",
-    country: "India",
-    time: "45-60 mins",
-    servings: "2-4",
-    ingredients: ["Chicken", "Tomato puree", "Butter", "Cream", "Kasuri methi", "Garam masala", "Garlic"],
-    taste: ["Creamy", "Mild", "Rich"],
-    rating: 4.1,
-    intro:
-      "Butter Chicken is a creamy tomato-based curry with tender chicken, famous for its rich and mildly spiced taste.",
-    caloriesNote: "Rich due to butter/cream",
-    tips: ["Char chicken for smoky flavor", "Use kasuri methi", "Simmer slowly for thickness"],
-    faq: [
-      { q: "Butter chicken vs tikka masala?", a: "Butter chicken is smoother and creamier." },
-      { q: "Best bread pairing?", a: "Naan and kulcha are top choices." },
-    ],
-  },
-  {
-    slug: "pho",
-    name: "Pho",
-    continent: "asia",
-    country: "Vietnam",
-    time: "60-120 mins",
-    servings: "2-4",
-    ingredients: ["Rice noodles", "Beef/chicken", "Broth", "Star anise", "Cinnamon", "Basil", "Bean sprouts"],
-    taste: ["Aromatic", "Light", "Savory"],
     rating: 4.5,
     intro:
-      "Pho is a Vietnamese noodle soup with fragrant broth, herbs, and tender meat for a soothing, balanced meal.",
-    caloriesNote: "Light meal, high in comfort",
-    tips: ["Toast spices first", "Add herbs fresh", "Slice meat thin for quick cooking"],
-    faq: [
-      { q: "Is pho spicy?", a: "Not by default, but chili can be added." },
-      { q: "What makes pho special?", a: "The slow-simmered aromatic broth." },
-    ],
-  },
-  {
-    slug: "bibimbap",
-    name: "Bibimbap",
-    continent: "asia",
-    country: "South Korea",
-    time: "30-50 mins",
-    servings: "1-2",
-    ingredients: ["Rice", "Gochujang", "Egg", "Vegetables", "Beef/tofu", "Sesame oil", "Kimchi"],
-    taste: ["Savory", "Spicy", "Balanced"],
-    rating: 4.4,
-    intro:
-      "Bibimbap is a colorful Korean rice bowl mixed with veggies, egg, protein, and spicy gochujang sauce.",
-    caloriesNote: "Balanced if portioned well",
-    tips: ["Prep veggies separately", "Add sesame oil for aroma", "Mix well before eating"],
-    faq: [
-      { q: "Is bibimbap healthy?", a: "Yes, it has a great balance of veggies and protein." },
-      { q: "Can it be vegetarian?", a: "Absolutely, use tofu/mushrooms and skip meat." },
-    ],
-  },
-  {
-    slug: "dumplings",
-    name: "Dumplings",
-    continent: "asia",
-    country: "China",
-    time: "30-60 mins",
-    servings: "2-4",
-    ingredients: ["Wrapper", "Minced meat/veg", "Ginger", "Garlic", "Soy sauce", "Spring onion", "Sesame oil"],
-    taste: ["Savory", "Juicy", "Umami"],
-    rating: 4.3,
-    intro:
-      "Chinese dumplings are flavorful pockets filled with meat or veggies, steamed or pan-fried for a juicy bite.",
-    caloriesNote: "Moderate, depends on frying",
-    tips: ["Seal edges properly", "Use dipping sauce", "Don’t overcrowd pan while frying"],
-    faq: [
-      { q: "Steam or fry dumplings?", a: "Both are great; steaming is lighter, frying adds crunch." },
-      { q: "What’s a good dip?", a: "Soy sauce + vinegar + chili oil works well." },
-    ],
-  },
-  {
-    slug: "satay",
-    name: "Satay",
-    continent: "asia",
-    country: "Indonesia",
-    time: "25-45 mins",
-    servings: "2-3",
-    ingredients: ["Chicken/beef", "Peanut sauce", "Soy sauce", "Garlic", "Lime", "Chili", "Skewers"],
-    taste: ["Smoky", "Nutty", "Savory"],
-    rating: 4.2,
-    intro:
-      "Satay features grilled skewers served with peanut sauce, known for its smoky char and bold flavors.",
-    caloriesNote: "Peanut sauce makes it rich",
-    tips: ["Marinate longer", "Grill on high heat", "Serve with cucumber/onion"],
-    faq: [
-      { q: "Is satay spicy?", a: "It can be mild or spicy depending on the sauce." },
-      { q: "Best meat for satay?", a: "Chicken thigh stays juicy and flavorful." },
-    ],
-  },
-  {
-    slug: "hainanese-chicken-rice",
-    name: "Hainanese Chicken Rice",
-    continent: "asia",
-    country: "Singapore",
-    time: "45-70 mins",
-    servings: "2-4",
-    ingredients: ["Chicken", "Rice", "Ginger", "Garlic", "Chicken stock", "Cucumber", "Chili sauce"],
-    taste: ["Clean", "Savory", "Comforting"],
-    rating: 4.3,
-    intro:
-      "Hainanese Chicken Rice is a fragrant rice dish served with tender poached chicken and bold dipping sauces.",
-    caloriesNote: "Balanced and comforting",
-    tips: ["Cook rice in chicken fat/stock", "Ice-bath chicken for tender skin", "Use ginger-scallion sauce"],
-    faq: [
-      { q: "Why is the rice special?", a: "It’s cooked in chicken stock with aromatics." },
-      { q: "Is it spicy?", a: "Not by default, but chili sauce adds heat." },
-    ],
+      "Veg Pad Thai is Thailand’s iconic stir-fried noodle dish made with tangy tamarind sauce, tofu, peanuts, and crunchy veggies.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "12-15 mins",
+      totalTime: "25 mins",
+      difficulty: "Easy",
+      steps: [
+        "Soak rice noodles in warm water for 8–10 minutes until soft, then drain.",
+        "Mix sauce: tamarind paste + soy sauce + a little sugar + water. Keep aside.",
+        "Heat a pan on high flame, add garlic and tofu. Stir-fry until tofu turns slightly golden.",
+        "Add drained noodles and pour the sauce. Toss quickly on high heat.",
+        "Add bean sprouts and spring onion, cook for 30–45 seconds.",
+        "Serve hot with crushed peanuts, lime juice, and chili flakes if you like spice.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 199,
+      currency: "INR",
+      previewText:
+        "🔒 AI cooking video is premium. Unlock to watch full step-by-step visuals + plating shots.",
+    },
   },
 
-  // 🌍 EUROPE (10)
+  {
+    slug: "bibimbap-veg",
+    name: "Bibimbap (Veg)",
+    continent: "asia",
+    country: "South Korea",
+    time: "30-45 mins",
+    servings: "1-2",
+    ingredients: [
+      "Cooked rice",
+      "Carrot",
+      "Spinach",
+      "Cucumber",
+      "Mushrooms",
+      "Sesame oil",
+      "Soy sauce",
+      "Gochujang (Korean chili paste)",
+      "Garlic",
+      "Sesame seeds",
+      "Egg (optional)",
+    ],
+    taste: ["Savory", "Spicy", "Balanced"],
+    rating: 4.6,
+    intro:
+      "Veg Bibimbap is a colorful Korean rice bowl topped with sautéed vegetables and spicy gochujang sauce, mixed together for a perfect bite.",
+
+    recipe: {
+      prepTime: "15 mins",
+      cookTime: "15-20 mins",
+      totalTime: "35 mins",
+      difficulty: "Easy",
+      steps: [
+        "Cook rice and keep warm.",
+        "Slice vegetables into thin strips (carrot, cucumber, mushrooms).",
+        "Sauté carrots for 2 minutes with a little oil and salt.",
+        "Sauté mushrooms with garlic + soy sauce for 2–3 minutes.",
+        "Blanch spinach for 1 minute, then toss with sesame oil + sesame seeds.",
+        "In a bowl, add rice at the base, arrange veggies on top in sections.",
+        "Add a spoon of gochujang and a drizzle of sesame oil. Top with egg if using.",
+        "Mix everything and eat hot for best flavor.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 199,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock premium AI video for authentic Korean plating + mixing ASMR shots.",
+    },
+  },
+
+  {
+    slug: "veg-dumplings",
+    name: "Veg Dumplings",
+    continent: "asia",
+    country: "China",
+    time: "35-50 mins",
+    servings: "2-4",
+    ingredients: [
+      "Dumpling wrappers",
+      "Cabbage",
+      "Carrot",
+      "Spring onion",
+      "Garlic",
+      "Ginger",
+      "Soy sauce",
+      "Black pepper",
+      "Sesame oil",
+      "Cornflour (optional)",
+    ],
+    taste: ["Savory", "Juicy", "Umami"],
+    rating: 4.4,
+    intro:
+      "Veg dumplings are soft wrappers filled with a flavorful veggie mix, steamed to perfection and served with spicy dipping sauce.",
+
+    recipe: {
+      prepTime: "20 mins",
+      cookTime: "12-15 mins",
+      totalTime: "40 mins",
+      difficulty: "Medium",
+      steps: [
+        "Finely chop cabbage, carrot, spring onion. Squeeze excess water from cabbage.",
+        "Mix veggies with ginger-garlic, soy sauce, pepper, sesame oil (add cornflour to bind if needed).",
+        "Place a spoon of filling in wrapper, seal edges with water and pleat tightly.",
+        "Steam dumplings for 10–12 minutes until wrappers turn glossy.",
+        "Serve hot with soy-vinegar-chili dip.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 149,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video to learn perfect dumpling folding + steaming visuals.",
+    },
+  },
+
+  // =========================
+  // 🌍 EUROPE (VEG)
+  // =========================
+
   {
     slug: "pizza-margherita",
     name: "Pizza Margherita",
     continent: "europe",
     country: "Italy",
-    time: "20-40 mins",
+    time: "25-40 mins",
     servings: "2-3",
-    ingredients: ["Pizza dough", "Tomato sauce", "Mozzarella", "Basil", "Olive oil", "Salt"],
+    ingredients: [
+      "Pizza base/dough",
+      "Tomato sauce",
+      "Mozzarella",
+      "Basil",
+      "Olive oil",
+      "Salt",
+      "Oregano (optional)",
+    ],
     taste: ["Cheesy", "Fresh", "Savory"],
-    rating: 4.3,
+    rating: 4.5,
     intro:
-      "Pizza Margherita is a classic Italian pizza topped with tomato, mozzarella, and basil for clean, timeless flavor.",
-    caloriesNote: "Carb-heavy but balanced with light toppings",
-    tips: ["Use hot oven", "Don’t overload toppings", "Fresh basil after baking"],
-    faq: [
-      { q: "Is Margherita vegetarian?", a: "Yes, it’s traditionally vegetarian." },
-      { q: "Best cheese for it?", a: "Fresh mozzarella works best." },
-    ],
+      "Pizza Margherita is a classic Italian pizza with tomato sauce, mozzarella, and fresh basil—simple, iconic, and delicious.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "12-15 mins",
+      totalTime: "25 mins",
+      difficulty: "Easy",
+      steps: [
+        "Preheat oven to maximum temperature (220–250°C).",
+        "Spread tomato sauce evenly on pizza base.",
+        "Add mozzarella pieces evenly across the base.",
+        "Drizzle olive oil and sprinkle salt/oregano lightly.",
+        "Bake for 12–15 minutes until cheese bubbles and edges turn golden.",
+        "Top with fresh basil after baking and serve hot.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 249,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for pizza stretch technique + melt shots + slice pull visuals.",
+    },
   },
+
   {
-    slug: "pasta-carbonara",
-    name: "Pasta Carbonara",
+    slug: "ratatouille",
+    name: "Ratatouille",
     continent: "europe",
-    country: "Italy",
-    time: "15-25 mins",
-    servings: "2",
-    ingredients: ["Spaghetti", "Egg", "Pecorino/Parmesan", "Black pepper", "Pancetta/guanciale"],
-    taste: ["Creamy", "Peppery", "Rich"],
-    rating: 4.1,
-    intro:
-      "Carbonara is a Roman pasta dish made creamy with egg and cheese, finished with black pepper and cured meat.",
-    caloriesNote: "Rich due to cheese/meat",
-    tips: ["No cream needed", "Mix off heat", "Use lots of pepper"],
-    faq: [
-      { q: "Is carbonara made with cream?", a: "Traditional carbonara uses egg, not cream." },
-      { q: "Which pasta is best?", a: "Spaghetti is the classic choice." },
-    ],
-  },
-  {
-    slug: "paella",
-    name: "Paella",
-    continent: "europe",
-    country: "Spain",
+    country: "France",
     time: "45-70 mins",
+    servings: "2-4",
+    ingredients: [
+      "Eggplant",
+      "Zucchini",
+      "Tomatoes",
+      "Bell peppers",
+      "Onion",
+      "Garlic",
+      "Olive oil",
+      "Salt",
+      "Black pepper",
+      "Herbs (thyme/oregano)",
+    ],
+    taste: ["Herby", "Fresh", "Light"],
+    rating: 4.7,
+    intro:
+      "Ratatouille is a French veggie stew packed with olive oil, herbs, and slow-cooked vegetables, making it healthy and comforting.",
+
+    recipe: {
+      prepTime: "15 mins",
+      cookTime: "35-45 mins",
+      totalTime: "60 mins",
+      difficulty: "Easy",
+      steps: [
+        "Chop eggplant, zucchini, peppers, and tomatoes into small chunks.",
+        "Heat olive oil in a pot. Sauté onion + garlic until soft.",
+        "Add bell peppers and cook 3–4 minutes.",
+        "Add eggplant + zucchini, cook 8–10 minutes stirring occasionally.",
+        "Add tomatoes, salt, pepper, herbs. Cover and simmer 20–25 minutes.",
+        "Finish with extra olive oil and herbs. Serve with bread/rice/pasta.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 199,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for cinematic veggie slicing + simmer shots + plating ASMR.",
+    },
+  },
+
+  {
+    slug: "greek-salad",
+    name: "Greek Salad",
+    continent: "europe",
+    country: "Greece",
+    time: "10-15 mins",
+    servings: "2",
+    ingredients: [
+      "Tomatoes",
+      "Cucumber",
+      "Onion",
+      "Olives",
+      "Feta cheese",
+      "Olive oil",
+      "Oregano",
+      "Salt",
+      "Black pepper",
+      "Lemon (optional)",
+    ],
+    taste: ["Fresh", "Salty", "Tangy"],
+    rating: 4.8,
+    intro:
+      "Greek salad is a fresh, crunchy mix of vegetables with feta and olive oil—light, healthy, and perfect for hot days.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "0 mins",
+      totalTime: "10 mins",
+      difficulty: "Easy",
+      steps: [
+        "Chop tomatoes, cucumber, and onion into bite-sized pieces.",
+        "Add olives and feta cubes on top.",
+        "Drizzle olive oil, sprinkle oregano, salt, and pepper.",
+        "Toss gently and serve chilled or fresh.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 99,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for crispy salad aesthetics + plating + dressing drizzle shots.",
+    },
+  },
+
+  {
+    slug: "pierogi-veg",
+    name: "Pierogi (Potato & Cheese)",
+    continent: "europe",
+    country: "Poland",
+    time: "45-80 mins",
     servings: "3-5",
-    ingredients: ["Rice", "Saffron", "Seafood/chicken", "Bell peppers", "Tomato", "Olive oil", "Stock"],
-    taste: ["Savory", "Aromatic", "Seafood-rich"],
+    ingredients: [
+      "Flour",
+      "Boiled potatoes",
+      "Cheese (paneer/cottage cheese)",
+      "Onion",
+      "Salt",
+      "Black pepper",
+      "Butter",
+      "Water",
+    ],
+    taste: ["Soft", "Savory", "Comforting"],
     rating: 4.4,
     intro:
-      "Paella is Spain’s famous rice dish cooked with saffron, stock, and a mix of seafood or meat for deep flavor.",
-    caloriesNote: "Balanced if seafood-based",
-    tips: ["Don’t stir too much", "Use saffron sparingly", "Let socarrat form at bottom"],
-    faq: [
-      { q: "What is socarrat?", a: "The crispy rice layer at the bottom of the pan." },
-      { q: "Can paella be vegetarian?", a: "Yes, with vegetables and plant stock." },
-    ],
+      "Pierogi are Polish dumplings filled with potato and cheese, boiled and pan-fried for a soft and crispy comfort meal.",
+
+    recipe: {
+      prepTime: "25 mins",
+      cookTime: "20 mins",
+      totalTime: "50 mins",
+      difficulty: "Medium",
+      steps: [
+        "Make dough: mix flour + salt + water to form smooth soft dough. Rest 15 minutes.",
+        "Mash potatoes, mix with cheese, salt, pepper. Add sautéed onions for extra flavor.",
+        "Roll dough thin and cut circles.",
+        "Fill each circle with potato-cheese mixture and seal well.",
+        "Boil pierogi until they float (2–3 mins).",
+        "Pan-fry in butter with onions until golden (optional but recommended).",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 199,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for dough rolling + dumpling sealing + buttery fry shots.",
+    },
   },
+
   {
     slug: "croissant",
     name: "Croissant",
@@ -260,246 +351,37 @@ export const dishes = [
     servings: "4-8",
     ingredients: ["Flour", "Butter", "Yeast", "Milk", "Sugar", "Salt"],
     taste: ["Buttery", "Flaky", "Light"],
-    rating: 4.0,
-    intro:
-      "Croissants are flaky French pastries made with layered buttery dough, crisp outside and airy inside.",
-    caloriesNote: "Butter-heavy indulgence",
-    tips: ["Keep butter cold", "Rest dough often", "Bake until deep golden"],
-    faq: [
-      { q: "Why is it flaky?", a: "Laminated layers of butter and dough create flakes." },
-      { q: "Is it sweet?", a: "It’s lightly sweet and mostly buttery." },
-    ],
-  },
-  {
-    slug: "ratatouille",
-    name: "Ratatouille",
-    continent: "europe",
-    country: "France",
-    time: "45-70 mins",
-    servings: "2-4",
-    ingredients: ["Eggplant", "Zucchini", "Tomato", "Bell pepper", "Onion", "Garlic", "Olive oil"],
-    taste: ["Herby", "Fresh", "Light"],
-    rating: 4.5,
-    intro:
-      "Ratatouille is a French vegetable stew rich in herbs, olive oil, and slow-cooked summer vegetables.",
-    caloriesNote: "Very healthy and light",
-    tips: ["Use ripe tomatoes", "Low heat simmer", "Finish with fresh herbs"],
-    faq: [
-      { q: "Is ratatouille vegan?", a: "Yes, it’s plant-based and naturally vegan." },
-      { q: "What to serve with it?", a: "Bread, pasta, or rice works great." },
-    ],
-  },
-  {
-    slug: "fish-and-chips",
-    name: "Fish & Chips",
-    continent: "europe",
-    country: "United Kingdom",
-    time: "30-50 mins",
-    servings: "2-3",
-    ingredients: ["White fish", "Potatoes", "Flour", "Oil", "Salt", "Lemon"],
-    taste: ["Crispy", "Salty", "Comforting"],
-    rating: 3.8,
-    intro:
-      "Fish & Chips is a British classic of crispy battered fish and fried potatoes, best with lemon and tartar sauce.",
-    caloriesNote: "Fried meal, heavy but iconic",
-    tips: ["Dry fish before batter", "Double fry chips", "Serve immediately"],
-    faq: [
-      { q: "Best fish for it?", a: "Cod or haddock are most common." },
-      { q: "How to keep it crispy?", a: "Serve fresh and avoid covering tightly." },
-    ],
-  },
-  {
-    slug: "greek-salad",
-    name: "Greek Salad",
-    continent: "europe",
-    country: "Greece",
-    time: "10-15 mins",
-    servings: "2",
-    ingredients: ["Tomato", "Cucumber", "Olives", "Feta", "Onion", "Olive oil", "Oregano"],
-    taste: ["Fresh", "Salty", "Tangy"],
-    rating: 4.6,
-    intro:
-      "Greek salad is a refreshing mix of crisp vegetables, feta, and olives with olive oil and oregano dressing.",
-    caloriesNote: "Light, fresh and nutrient-rich",
-    tips: ["Use good feta", "Don’t overdress", "Add oregano for authentic taste"],
-    faq: [
-      { q: "Is Greek salad healthy?", a: "Yes, it’s fresh and full of nutrients." },
-      { q: "Can it be vegan?", a: "Yes, skip feta or use vegan feta." },
-    ],
-  },
-  {
-    slug: "goulash",
-    name: "Goulash",
-    continent: "europe",
-    country: "Hungary",
-    time: "60-120 mins",
-    servings: "3-5",
-    ingredients: ["Beef", "Paprika", "Onion", "Tomato", "Garlic", "Potatoes", "Stock"],
-    taste: ["Hearty", "Paprika-rich", "Savory"],
-    rating: 4.0,
-    intro:
-      "Goulash is a Hungarian stew made with beef and paprika, simmered slowly for deep comforting flavor.",
-    caloriesNote: "Hearty and filling",
-    tips: ["Use sweet paprika", "Simmer slowly", "Serve with bread or noodles"],
-    faq: [
-      { q: "Is goulash spicy?", a: "It’s more smoky than spicy, unless hot paprika is used." },
-      { q: "Is it soup or stew?", a: "It can be either depending on thickness." },
-    ],
-  },
-  {
-    slug: "pierogi",
-    name: "Pierogi",
-    continent: "europe",
-    country: "Poland",
-    time: "45-80 mins",
-    servings: "3-5",
-    ingredients: ["Flour", "Potato", "Cheese", "Onion", "Butter", "Salt", "Pepper"],
-    taste: ["Soft", "Savory", "Comforting"],
-    rating: 4.1,
-    intro:
-      "Pierogi are Polish dumplings filled with potato and cheese, boiled and often pan-fried with butter and onion.",
-    caloriesNote: "Comfort food, moderate heavy",
-    tips: ["Seal well", "Boil until they float", "Pan-fry for golden finish"],
-    faq: [
-      { q: "Are pierogi sweet or salty?", a: "They can be both; potato-cheese is savory." },
-      { q: "Can pierogi be frozen?", a: "Yes, freeze after boiling for easy use later." },
-    ],
-  },
-  {
-    slug: "swedish-meatballs",
-    name: "Swedish Meatballs",
-    continent: "europe",
-    country: "Sweden",
-    time: "30-50 mins",
-    servings: "2-4",
-    ingredients: ["Minced meat", "Bread crumbs", "Cream", "Onion", "Butter", "Gravy", "Potatoes"],
-    taste: ["Creamy", "Savory", "Comforting"],
-    rating: 4.0,
-    intro:
-      "Swedish meatballs are tender and juicy, served with creamy gravy and mashed potatoes for comfort food perfection.",
-    caloriesNote: "Rich due to cream gravy",
-    tips: ["Don’t overmix mince", "Brown in batches", "Serve with lingonberry jam if available"],
-    faq: [
-      { q: "What makes them Swedish?", a: "Creamy gravy and spices like allspice are classic." },
-      { q: "Best side dish?", a: "Mashed potatoes and pickled cucumber." },
-    ],
-  },
-
-  // 🌍 AFRICA (7)
-  {
-    slug: "jollof-rice",
-    name: "Jollof Rice",
-    continent: "africa",
-    country: "West Africa",
-    time: "40-60 mins",
-    servings: "3-5",
-    ingredients: ["Rice", "Tomato", "Onion", "Pepper", "Spices", "Stock", "Oil"],
-    taste: ["Smoky", "Spiced", "Savory"],
-    rating: 4.2,
-    intro:
-      "Jollof rice is a West African one-pot rice dish with tomato base and bold spices, famous for its smoky flavor.",
-    caloriesNote: "Balanced and filling",
-    tips: ["Use tomato paste for depth", "Cook on low heat", "Let bottom slightly toast for smokiness"],
-    faq: [
-      { q: "Is jollof spicy?", a: "Yes, but it can be adjusted to taste." },
-      { q: "What protein goes with it?", a: "Chicken, fish, or plantains pair well." },
-    ],
-  },
-  {
-    slug: "injera-doro-wat",
-    name: "Injera & Doro Wat",
-    continent: "africa",
-    country: "Ethiopia",
-    time: "60-120 mins",
-    servings: "3-5",
-    ingredients: ["Teff injera", "Chicken", "Berbere spice", "Onion", "Garlic", "Egg", "Butter"],
-    taste: ["Spicy", "Tangy", "Hearty"],
     rating: 4.3,
     intro:
-      "Injera with Doro Wat is Ethiopia’s signature combo: tangy flatbread served with spicy chicken stew and egg.",
-    caloriesNote: "Protein-rich and filling",
-    tips: ["Cook onion base patiently", "Use berbere carefully", "Serve hot with injera"],
-    faq: [
-      { q: "What is injera?", a: "A tangy fermented flatbread made from teff." },
-      { q: "Is it very spicy?", a: "Doro wat is usually spicy, but can be toned down." },
-    ],
+      "Croissants are flaky French pastries made with layered buttery dough—crispy outside, airy inside.",
+
+    recipe: {
+      prepTime: "2 hrs",
+      cookTime: "18-22 mins",
+      totalTime: "3-5 hrs",
+      difficulty: "Hard",
+      steps: [
+        "Prepare yeast dough and chill it for at least 45 minutes.",
+        "Roll dough and fold butter inside (lamination).",
+        "Fold and chill the dough multiple times to create layers.",
+        "Shape croissants and proof until puffy.",
+        "Bake at 190–200°C until golden and flaky.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 299,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for perfect lamination layers + bakery-style croissant shots.",
+    },
   },
-  {
-    slug: "tagine",
-    name: "Tagine",
-    continent: "africa",
-    country: "Morocco",
-    time: "60-120 mins",
-    servings: "3-5",
-    ingredients: ["Chicken/lamb", "Olives", "Preserved lemon", "Onion", "Spices", "Garlic", "Olive oil"],
-    taste: ["Aromatic", "Savory", "Citrusy"],
-    rating: 4.4,
-    intro:
-      "Moroccan tagine is a slow-cooked stew with fragrant spices, olives, and preserved lemon for unique depth.",
-    caloriesNote: "Balanced if lean meat used",
-    tips: ["Low and slow cooking", "Use preserved lemon", "Serve with couscous or bread"],
-    faq: [
-      { q: "What is tagine cooked in?", a: "Traditionally in a clay pot called a tagine." },
-      { q: "Is it spicy?", a: "It’s aromatic more than spicy." },
-    ],
-  },
-  {
-    slug: "bobotie",
-    name: "Bobotie",
-    continent: "africa",
-    country: "South Africa",
-    time: "45-70 mins",
-    servings: "3-5",
-    ingredients: ["Minced meat", "Egg", "Milk", "Curry spices", "Onion", "Raisins", "Bread"],
-    taste: ["Sweet-savory", "Spiced", "Comforting"],
-    rating: 4.0,
-    intro:
-      "Bobotie is a South African baked minced meat dish with sweet spices and creamy egg topping.",
-    caloriesNote: "Moderately rich and filling",
-    tips: ["Use mild curry spices", "Don’t skip egg topping", "Serve with rice"],
-    faq: [
-      { q: "Is bobotie sweet?", a: "Slightly, due to raisins and warm spices." },
-      { q: "What side dish works?", a: "Yellow rice is a classic pairing." },
-    ],
-  },
-  {
-    slug: "bunny-chow",
-    name: "Bunny Chow",
-    continent: "africa",
-    country: "South Africa",
-    time: "30-60 mins",
-    servings: "2-3",
-    ingredients: ["Bread loaf", "Curry", "Potato", "Onion", "Spices", "Chickpeas/meat"],
-    taste: ["Spicy", "Hearty", "Savory"],
-    rating: 3.9,
-    intro:
-      "Bunny chow is a South African street food where hollowed bread is filled with spicy curry for a bold meal.",
-    caloriesNote: "Carb-heavy but filling",
-    tips: ["Use thick curry", "Serve hot", "Eat with hands for full experience"],
-    faq: [
-      { q: "Is it messy to eat?", a: "Yes, but that’s part of the fun." },
-      { q: "Can it be vegetarian?", a: "Yes, chickpea curry works great." },
-    ],
-  },
-  {
-    slug: "suya",
-    name: "Suya",
-    continent: "africa",
-    country: "Nigeria",
-    time: "20-40 mins",
-    servings: "2-4",
-    ingredients: ["Beef/chicken", "Peanut spice mix", "Onion", "Chili", "Salt", "Skewers"],
-    taste: ["Spicy", "Smoky", "Nutty"],
-    rating: 4.1,
-    intro:
-      "Suya is Nigerian grilled meat skewers coated in peanut-based spice mix, delivering spicy smoky street-food vibes.",
-    caloriesNote: "Protein-rich snack/meal",
-    tips: ["Grill on high heat", "Use suya spice generously", "Serve with onions and tomato"],
-    faq: [
-      { q: "Is suya very spicy?", a: "It can be hot depending on spice blend." },
-      { q: "Can it be made in oven?", a: "Yes, broil/grill setting works." },
-    ],
-  },
+
+  // =========================
+  // 🌍 AFRICA (VEG / VEG VERSION)
+  // =========================
+
   {
     slug: "koshari",
     name: "Koshari",
@@ -507,347 +389,375 @@ export const dishes = [
     country: "Egypt",
     time: "45-70 mins",
     servings: "3-5",
-    ingredients: ["Rice", "Lentils", "Pasta", "Tomato sauce", "Onions", "Garlic", "Vinegar"],
-    taste: ["Tangy", "Savory", "Filling"],
-    rating: 4.3,
-    intro:
-      "Koshari is Egypt’s comfort bowl with rice, lentils, pasta, tomato sauce and crispy onions for a satisfying bite.",
-    caloriesNote: "Very filling, carb-rich",
-    tips: ["Crisp onions well", "Balance vinegar sauce", "Serve hot"],
-    faq: [
-      { q: "Is koshari vegan?", a: "Yes, it’s naturally vegan-friendly." },
-      { q: "What makes it special?", a: "The mix of textures and tangy tomato sauce." },
+    ingredients: [
+      "Rice",
+      "Lentils",
+      "Pasta",
+      "Tomato sauce",
+      "Onions",
+      "Garlic",
+      "Vinegar",
+      "Cumin",
+      "Salt",
+      "Chili (optional)",
     ],
+    taste: ["Tangy", "Savory", "Filling"],
+    rating: 4.7,
+    intro:
+      "Koshari is Egypt’s famous comfort bowl combining rice, lentils, pasta, tomato sauce, and crispy onions.",
+
+    recipe: {
+      prepTime: "15 mins",
+      cookTime: "35-40 mins",
+      totalTime: "55 mins",
+      difficulty: "Easy",
+      steps: [
+        "Cook lentils until soft and keep aside.",
+        "Cook rice separately and keep warm.",
+        "Boil pasta and drain.",
+        "Make tomato sauce with garlic, cumin, salt, and a splash of vinegar.",
+        "Fry onions until crispy and golden.",
+        "Assemble: rice + lentils + pasta + tomato sauce + crispy onions on top.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 149,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for crunchy onion fry + perfect layering + sauce pour shots.",
+    },
   },
 
-  // 🌎 NORTH AMERICA (8)
   {
-    slug: "cheeseburger",
-    name: "Cheeseburger",
-    continent: "north-america",
-    country: "USA",
-    time: "15-25 mins",
-    servings: "1-2",
-    ingredients: ["Burger bun", "Beef patty", "Cheese", "Lettuce", "Tomato", "Onion", "Sauce"],
-    taste: ["Savory", "Cheesy", "Comforting"],
-    rating: 3.8,
-    intro:
-      "The cheeseburger is a classic American comfort food with a juicy patty, melted cheese, and fresh toppings.",
-    caloriesNote: "Heavy meal, high protein and fat",
-    tips: ["Don’t press patty while cooking", "Toast buns", "Rest patty before assembling"],
-    faq: [
-      { q: "Best cheese for burger?", a: "Cheddar and American cheese melt perfectly." },
-      { q: "How to keep it juicy?", a: "Use fattier mince and avoid overcooking." },
+    slug: "jollof-rice-veg",
+    name: "Jollof Rice (Veg Version)",
+    continent: "africa",
+    country: "West Africa",
+    time: "40-60 mins",
+    servings: "3-5",
+    ingredients: [
+      "Rice",
+      "Tomato puree",
+      "Onion",
+      "Bell pepper",
+      "Garlic",
+      "Spices",
+      "Vegetable stock/water",
+      "Oil",
+      "Salt",
     ],
-  },
-  {
-    slug: "bbq-ribs",
-    name: "BBQ Ribs",
-    continent: "north-america",
-    country: "USA",
-    time: "2-4 hrs",
-    servings: "2-4",
-    ingredients: ["Pork ribs", "BBQ sauce", "Spice rub", "Salt", "Pepper", "Garlic powder"],
-    taste: ["Smoky", "Sweet-savory", "Tender"],
-    rating: 4.1,
-    intro:
-      "BBQ ribs are slow-cooked until tender, coated in smoky sweet sauce for a bold American barbecue experience.",
-    caloriesNote: "Rich and heavy meal",
-    tips: ["Low & slow is key", "Wrap for tenderness", "Finish with sauce glaze"],
-    faq: [
-      { q: "How long to cook ribs?", a: "2–4 hours depending on heat and method." },
-      { q: "Oven or smoker?", a: "Smoker is best, oven works great too." },
-    ],
-  },
-  {
-    slug: "lobster-roll",
-    name: "Lobster Roll",
-    continent: "north-america",
-    country: "USA",
-    time: "20-30 mins",
-    servings: "1-2",
-    ingredients: ["Lobster meat", "Mayo/butter", "Hot dog bun", "Lemon", "Celery", "Salt"],
-    taste: ["Buttery", "Fresh", "Light"],
+    taste: ["Smoky", "Spiced", "Savory"],
     rating: 4.4,
     intro:
-      "A lobster roll is a seaside favorite with sweet lobster meat served in a toasted bun with light dressing.",
-    caloriesNote: "Light but pricey protein",
-    tips: ["Don’t overmix lobster", "Toast bun in butter", "Add lemon for freshness"],
-    faq: [
-      { q: "Mayo or butter style?", a: "Both exist; New England often uses mayo, Connecticut uses butter." },
-      { q: "Is it served hot?", a: "Can be hot or cold depending on style." },
-    ],
+      "Veg Jollof Rice is a bold one-pot tomato rice dish packed with spices and that signature smoky flavor.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "30-35 mins",
+      totalTime: "45 mins",
+      difficulty: "Easy",
+      steps: [
+        "Blend tomatoes + onion + bell pepper into puree.",
+        "Cook puree in oil until it thickens and turns deep red.",
+        "Add spices and salt, stir for 1 minute.",
+        "Add washed rice and mix well.",
+        "Add stock/water and cook covered on low flame until rice is done.",
+        "Rest 5 minutes and fluff rice before serving.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 149,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for smoky one-pot technique + rice texture closeups.",
+    },
   },
+
+  {
+    slug: "bunny-chow-veg",
+    name: "Bunny Chow (Veg Curry)",
+    continent: "africa",
+    country: "South Africa",
+    time: "35-55 mins",
+    servings: "2-3",
+    ingredients: [
+      "Bread loaf",
+      "Potato",
+      "Chickpeas",
+      "Onion",
+      "Tomato",
+      "Curry spices",
+      "Garlic",
+      "Salt",
+      "Oil",
+    ],
+    taste: ["Spicy", "Hearty", "Savory"],
+    rating: 4.2,
+    intro:
+      "Veg Bunny Chow is a street-style curry served inside a hollowed bread loaf—filling, spicy, and fun to eat.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "25-30 mins",
+      totalTime: "40 mins",
+      difficulty: "Easy",
+      steps: [
+        "Sauté onion + garlic in oil until golden.",
+        "Add tomatoes + curry spices and cook until oil separates.",
+        "Add potatoes + chickpeas + water, simmer until potatoes soften.",
+        "Cut bread loaf top and hollow the center.",
+        "Fill hot curry into bread bowl and serve immediately.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 129,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for bread bowl carving + curry filling pour shots.",
+    },
+  },
+
+  // =========================
+  // 🌎 NORTH AMERICA (VEG)
+  // =========================
+
   {
     slug: "mac-and-cheese",
     name: "Mac & Cheese",
     continent: "north-america",
     country: "USA",
-    time: "20-40 mins",
+    time: "20-35 mins",
     servings: "2-4",
-    ingredients: ["Macaroni", "Cheddar", "Milk", "Butter", "Flour", "Salt", "Pepper"],
+    ingredients: [
+      "Macaroni pasta",
+      "Cheddar cheese",
+      "Milk",
+      "Butter",
+      "Flour",
+      "Salt",
+      "Black pepper",
+      "Chili flakes (optional)",
+    ],
     taste: ["Cheesy", "Creamy", "Comforting"],
-    rating: 3.9,
+    rating: 4.2,
     intro:
-      "Mac & cheese is a creamy pasta dish loaded with melted cheese sauce, famous for comfort and nostalgia.",
-    caloriesNote: "Very rich and cheesy",
-    tips: ["Use 2-3 cheese mix", "Don’t overcook pasta", "Bake for crispy top if needed"],
-    faq: [
-      { q: "Best cheese blend?", a: "Cheddar + mozzarella + parmesan works great." },
-      { q: "Can it be baked?", a: "Yes, baking adds a crispy top layer." },
-    ],
+      "Mac & Cheese is creamy pasta loaded with cheese sauce—classic comfort food and super satisfying.",
+
+    recipe: {
+      prepTime: "5 mins",
+      cookTime: "15-20 mins",
+      totalTime: "25 mins",
+      difficulty: "Easy",
+      steps: [
+        "Boil macaroni until al dente and drain.",
+        "Make roux: melt butter, add flour, cook 30 seconds.",
+        "Add milk slowly and whisk until smooth.",
+        "Add cheese and stir until melted.",
+        "Mix macaroni into sauce. Season with salt and pepper.",
+        "Serve hot (bake optional for crispy top).",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 129,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for cheese-pull + creamy sauce closeup visuals.",
+    },
   },
+
   {
-    slug: "clam-chowder",
-    name: "Clam Chowder",
+    slug: "burrito-bowl-veg",
+    name: "Burrito Bowl (Veg)",
     continent: "north-america",
-    country: "USA",
-    time: "30-60 mins",
-    servings: "2-4",
-    ingredients: ["Clams", "Potato", "Cream", "Onion", "Butter", "Celery", "Black pepper"],
-    taste: ["Creamy", "Savory", "Seafood-rich"],
-    rating: 4.0,
-    intro:
-      "Clam chowder is a creamy soup filled with clams and potatoes, known for rich comfort and coastal flavors.",
-    caloriesNote: "Cream-based heavy soup",
-    tips: ["Don’t boil hard after cream", "Use fresh clams if possible", "Season carefully"],
-    faq: [
-      { q: "Is chowder thick?", a: "Yes, it’s usually creamy and thick." },
-      { q: "What bread pairs best?", a: "Sourdough bread bowl is perfect." },
+    country: "Mexico/USA",
+    time: "20-30 mins",
+    servings: "1-2",
+    ingredients: [
+      "Rice",
+      "Beans",
+      "Corn",
+      "Salsa",
+      "Avocado",
+      "Onion",
+      "Lettuce",
+      "Cheese (optional)",
+      "Lime",
+      "Salt",
     ],
+    taste: ["Fresh", "Savory", "Customizable"],
+    rating: 4.4,
+    intro:
+      "Veg burrito bowl is a fresh customizable meal with rice, beans, salsa, and toppings—healthy and filling.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "10-12 mins",
+      totalTime: "22 mins",
+      difficulty: "Easy",
+      steps: [
+        "Cook rice and keep aside.",
+        "Warm beans with spices (optional).",
+        "Chop lettuce, onion and prepare salsa.",
+        "Assemble bowl: rice + beans + corn + salsa + lettuce.",
+        "Top with avocado, lime juice, and cheese if using.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 99,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for aesthetic bowl assembly + topping shots.",
+    },
   },
+
   {
-    slug: "poutine",
-    name: "Poutine",
+    slug: "poutine-veg",
+    name: "Poutine (Veg Gravy)",
     continent: "north-america",
     country: "Canada",
     time: "25-45 mins",
     servings: "1-3",
-    ingredients: ["Fries", "Cheese curds", "Gravy", "Salt", "Pepper"],
+    ingredients: [
+      "Fries",
+      "Cheese curds (or mozzarella cubes)",
+      "Veg gravy (mushroom/onion)",
+      "Salt",
+      "Black pepper",
+    ],
     taste: ["Salty", "Cheesy", "Comforting"],
-    rating: 3.9,
-    intro:
-      "Poutine is Canada’s famous fries topped with cheese curds and hot gravy for a messy delicious comfort meal.",
-    caloriesNote: "Very heavy comfort food",
-    tips: ["Use fresh cheese curds", "Serve gravy hot", "Crisp fries well"],
-    faq: [
-      { q: "Do cheese curds melt fully?", a: "They soften but keep a squeaky bite." },
-      { q: "Is poutine vegetarian?", a: "It can be if gravy is vegetarian." },
-    ],
-  },
-  {
-    slug: "tacos-al-pastor",
-    name: "Tacos al Pastor",
-    continent: "north-america",
-    country: "Mexico",
-    time: "30-60 mins",
-    servings: "2-4",
-    ingredients: ["Pork", "Pineapple", "Tortillas", "Onion", "Cilantro", "Chili", "Lime"],
-    taste: ["Spicy", "Tangy", "Savory"],
-    rating: 4.4,
-    intro:
-      "Tacos al Pastor are Mexican tacos made with marinated pork and pineapple, delivering sweet-spicy street flavor.",
-    caloriesNote: "Balanced in small portions",
-    tips: ["Marinate longer for depth", "Char meat slightly", "Add lime last"],
-    faq: [
-      { q: "Why pineapple is used?", a: "It adds sweetness and tenderizes meat." },
-      { q: "Best topping?", a: "Onion, cilantro, and lime are classic." },
-    ],
-  },
-  {
-    slug: "burrito-bowl",
-    name: "Burrito Bowl",
-    continent: "north-america",
-    country: "Mexico/USA",
-    time: "20-35 mins",
-    servings: "1-2",
-    ingredients: ["Rice", "Beans", "Chicken/tofu", "Salsa", "Corn", "Avocado", "Cheese"],
-    taste: ["Fresh", "Savory", "Customizable"],
-    rating: 4.2,
-    intro:
-      "A burrito bowl is a customizable mix of rice, beans, protein, and toppings, delivering full burrito flavor without wrap.",
-    caloriesNote: "Balanced and flexible meal",
-    tips: ["Use fresh salsa", "Add avocado for fats", "Control cheese for health"],
-    faq: [
-      { q: "Is it healthier than a burrito?", a: "Often yes because you can control carbs and toppings." },
-      { q: "Vegetarian option?", a: "Yes, beans + tofu works great." },
-    ],
-  },
-
-  // 🌎 SOUTH AMERICA (8)
-  {
-    slug: "feijoada",
-    name: "Feijoada",
-    continent: "south-america",
-    country: "Brazil",
-    time: "2-4 hrs",
-    servings: "4-6",
-    ingredients: ["Black beans", "Pork", "Sausage", "Onion", "Garlic", "Bay leaf", "Rice"],
-    taste: ["Hearty", "Smoky", "Savory"],
     rating: 4.1,
     intro:
-      "Feijoada is Brazil’s rich black bean stew with pork, traditionally served with rice and greens for a hearty meal.",
-    caloriesNote: "Heavy and protein-rich",
-    tips: ["Soak beans", "Cook slow for flavor", "Serve with orange slices"],
-    faq: [
-      { q: "Is feijoada spicy?", a: "Not typically, it’s more smoky and savory." },
-      { q: "Why orange slices?", a: "They cut through the richness and help digestion." },
-    ],
+      "Veg Poutine is Canada’s famous fries topped with cheese curds and hot vegetarian gravy—messy, warm, and addictive.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "15-20 mins",
+      totalTime: "30 mins",
+      difficulty: "Easy",
+      steps: [
+        "Cook fries until crispy (air-fry or deep-fry).",
+        "Prepare veg gravy: sauté onion/mushrooms, add stock + thicken lightly.",
+        "Place fries on plate, add cheese curds/cubes.",
+        "Pour hot gravy on top and serve immediately.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 129,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for gravy pour + melty cheese closeups.",
+    },
   },
+
+  // =========================
+  // 🌎 SOUTH AMERICA (VEG)
+  // =========================
+
   {
-    slug: "churrasco",
-    name: "Churrasco",
-    continent: "south-america",
-    country: "Brazil",
-    time: "30-90 mins",
-    servings: "3-6",
-    ingredients: ["Beef", "Coarse salt", "Garlic", "Pepper", "Fire/grill"],
-    taste: ["Smoky", "Meaty", "Savory"],
-    rating: 4.3,
-    intro:
-      "Churrasco is Brazilian grilled meat cooked over open flame, famous for its smoky crust and juicy interior.",
-    caloriesNote: "High protein, depends on cut",
-    tips: ["Use coarse salt", "Rest after grilling", "Slice against grain"],
-    faq: [
-      { q: "Do you need marinade?", a: "Often salt is enough for authentic style." },
-      { q: "Best cut for churrasco?", a: "Picanha is a classic favorite." },
-    ],
-  },
-  {
-    slug: "empanadas",
-    name: "Empanadas",
-    continent: "south-america",
-    country: "Argentina",
-    time: "45-90 mins",
-    servings: "4-8",
-    ingredients: ["Dough", "Minced meat/veg", "Onion", "Spices", "Egg", "Olives"],
-    taste: ["Savory", "Flaky", "Comforting"],
-    rating: 4.0,
-    intro:
-      "Empanadas are stuffed pastries baked or fried, filled with spiced meat or vegetables for a portable snack.",
-    caloriesNote: "Moderate, depends on frying",
-    tips: ["Seal edges properly", "Bake for lighter version", "Add olives for authenticity"],
-    faq: [
-      { q: "Are empanadas fried?", a: "They can be baked or fried depending on region." },
-      { q: "Can they be vegetarian?", a: "Yes, bean, cheese, or veggie fillings work great." },
-    ],
-  },
-  {
-    slug: "asado",
-    name: "Asado",
-    continent: "south-america",
-    country: "Argentina",
-    time: "2-5 hrs",
-    servings: "4-8",
-    ingredients: ["Beef", "Salt", "Firewood/charcoal", "Sausage", "Ribs"],
-    taste: ["Smoky", "Rich", "Savory"],
-    rating: 4.2,
-    intro:
-      "Asado is Argentina’s legendary barbecue tradition featuring slow-grilled beef cuts for deep smoky flavor.",
-    caloriesNote: "Heavy meal, protein-rich",
-    tips: ["Slow grilling is key", "Use simple seasoning", "Serve with chimichurri"],
-    faq: [
-      { q: "What is chimichurri?", a: "A herb-garlic sauce served with grilled meats." },
-      { q: "Is asado spicy?", a: "No, it’s more smoky and savory." },
-    ],
-  },
-  {
-    slug: "ceviche",
-    name: "Ceviche",
-    continent: "south-america",
-    country: "Peru",
-    time: "15-30 mins",
-    servings: "2-3",
-    ingredients: ["Fresh fish", "Lime", "Onion", "Chili", "Cilantro", "Salt"],
-    taste: ["Tangy", "Fresh", "Spicy"],
-    rating: 4.6,
-    intro:
-      "Ceviche is a refreshing Peruvian seafood dish where fish is ‘cooked’ in citrus and served with herbs and onion.",
-    caloriesNote: "Very light, protein-rich",
-    tips: ["Use freshest fish", "Don’t marinate too long", "Chill before serving"],
-    faq: [
-      { q: "Is ceviche raw?", a: "Fish is cured in citrus; it’s not heat-cooked." },
-      { q: "Is it safe?", a: "Safer with very fresh fish and proper hygiene." },
-    ],
-  },
-  {
-    slug: "arepas",
-    name: "Arepas",
+    slug: "arepas-veg",
+    name: "Arepas (Veg Filling)",
     continent: "south-america",
     country: "Venezuela/Colombia",
     time: "20-35 mins",
     servings: "2-4",
-    ingredients: ["Cornmeal", "Water", "Salt", "Cheese", "Avocado", "Beans/meat"],
+    ingredients: [
+      "Cornmeal",
+      "Water",
+      "Salt",
+      "Cheese",
+      "Avocado",
+      "Beans (optional)",
+      "Butter/oil",
+    ],
     taste: ["Savory", "Crispy", "Soft inside"],
-    rating: 4.3,
-    intro:
-      "Arepas are cornmeal cakes grilled or pan-fried, stuffed with fillings like cheese, beans, or meat for a hearty meal.",
-    caloriesNote: "Good alternative to bread",
-    tips: ["Keep dough moist", "Cook until crust forms", "Stuff while warm"],
-    faq: [
-      { q: "Are arepas gluten-free?", a: "Yes, they are made from cornmeal." },
-      { q: "Best filling?", a: "Cheese and avocado are popular choices." },
-    ],
-  },
-  {
-    slug: "lomo-saltado",
-    name: "Lomo Saltado",
-    continent: "south-america",
-    country: "Peru",
-    time: "25-40 mins",
-    servings: "2-3",
-    ingredients: ["Beef strips", "Onion", "Tomato", "Soy sauce", "Vinegar", "Fries", "Rice"],
-    taste: ["Savory", "Tangy", "Hearty"],
-    rating: 4.2,
-    intro:
-      "Lomo Saltado is a Peruvian stir-fry mixing beef, vegetables, soy sauce, served with fries and rice for bold comfort.",
-    caloriesNote: "Hearty due to fries + rice",
-    tips: ["Cook on high heat", "Don’t overcook beef", "Add fries at end"],
-    faq: [
-      { q: "Why fries are included?", a: "It’s a unique fusion of Chinese-Peruvian flavors." },
-      { q: "Is it spicy?", a: "Usually mild, but can include chili." },
-    ],
-  },
-  {
-    slug: "moqueca",
-    name: "Moqueca",
-    continent: "south-america",
-    country: "Brazil",
-    time: "40-70 mins",
-    servings: "3-5",
-    ingredients: ["Fish", "Coconut milk", "Tomato", "Onion", "Garlic", "Lime", "Coriander"],
-    taste: ["Creamy", "Citrusy", "Savory"],
     rating: 4.5,
     intro:
-      "Moqueca is a Brazilian fish stew cooked with coconut milk and lime, known for its creamy tropical flavor.",
-    caloriesNote: "Creamy but nutritious seafood meal",
-    tips: ["Use firm fish", "Simmer gently", "Finish with lime and herbs"],
-    faq: [
-      { q: "Is moqueca spicy?", a: "Not necessarily, it’s more creamy and aromatic." },
-      { q: "What to serve with it?", a: "Rice and farofa are common sides." },
-    ],
+      "Arepas are cornmeal cakes grilled until crisp, then stuffed with cheese, avocado, or beans for a hearty veg meal.",
+
+    recipe: {
+      prepTime: "10 mins",
+      cookTime: "12-15 mins",
+      totalTime: "25 mins",
+      difficulty: "Easy",
+      steps: [
+        "Mix cornmeal + salt + warm water into a soft dough. Rest 5 minutes.",
+        "Shape thick discs and cook on a pan 4–5 minutes per side.",
+        "Optional: finish in oven 5 minutes for fluffy interior.",
+        "Slice open and fill with cheese, avocado, beans, or veggies.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 129,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for perfect arepa shaping + stuffing shots.",
+    },
   },
 
-  // 🌊 OCEANIA (7)
   {
-    slug: "meat-pie",
-    name: "Meat Pie",
-    continent: "oceania",
-    country: "Australia",
+    slug: "empanadas-veg",
+    name: "Empanadas (Veg)",
+    continent: "south-america",
+    country: "Argentina",
     time: "45-90 mins",
-    servings: "3-6",
-    ingredients: ["Pastry", "Minced beef", "Gravy", "Onion", "Salt", "Pepper"],
-    taste: ["Savory", "Flaky", "Comforting"],
-    rating: 3.9,
-    intro:
-      "The Australian meat pie is a classic baked pastry filled with rich beef gravy, popular as a quick comfort snack.",
-    caloriesNote: "Hearty pastry meal",
-    tips: ["Thick gravy filling", "Bake until golden", "Let rest before cutting"],
-    faq: [
-      { q: "Is meat pie spicy?", a: "No, it’s usually mild and savory." },
-      { q: "Best sauce to pair?", a: "Tomato sauce/ketchup is classic." },
+    servings: "4-8",
+    ingredients: [
+      "Empanada dough",
+      "Onion",
+      "Capsicum",
+      "Corn",
+      "Cheese",
+      "Garlic",
+      "Salt",
+      "Black pepper",
+      "Chili flakes (optional)",
     ],
+    taste: ["Savory", "Flaky", "Comforting"],
+    rating: 4.3,
+    intro:
+      "Veg empanadas are stuffed pastry pockets filled with veggies and cheese, baked until golden and crispy.",
+
+    recipe: {
+      prepTime: "20 mins",
+      cookTime: "20-25 mins",
+      totalTime: "45 mins",
+      difficulty: "Medium",
+      steps: [
+        "Sauté onion + capsicum until soft, add corn, salt and pepper.",
+        "Cool mixture and add cheese.",
+        "Fill dough circles with mixture and seal edges.",
+        "Bake at 200°C for 20–25 minutes until golden.",
+        "Serve hot with dip or salsa.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 149,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for empanada sealing technique + crisp bake shots.",
+    },
   },
+
+  // =========================
+  // 🌊 OCEANIA (DESSERTS / VEG)
+  // =========================
+
   {
     slug: "pavlova",
     name: "Pavlova",
@@ -855,18 +765,42 @@ export const dishes = [
     country: "Australia/New Zealand",
     time: "60-90 mins",
     servings: "4-8",
-    ingredients: ["Egg whites", "Sugar", "Cornstarch", "Vinegar", "Cream", "Fruits"],
-    taste: ["Sweet", "Light", "Creamy"],
-    rating: 4.2,
-    intro:
-      "Pavlova is a meringue dessert with crisp shell and soft center, topped with whipped cream and fresh fruits.",
-    caloriesNote: "Sweet dessert, light texture",
-    tips: ["Bake low and slow", "Cool in oven", "Top with fruits before serving"],
-    faq: [
-      { q: "Why is pavlova soft inside?", a: "Slow baking keeps the inside marshmallow-like." },
-      { q: "Is it gluten-free?", a: "Yes, pavlova is naturally gluten-free." },
+    ingredients: [
+      "Egg whites",
+      "Sugar",
+      "Cornstarch",
+      "Vinegar",
+      "Whipping cream",
+      "Fresh fruits",
     ],
+    taste: ["Sweet", "Light", "Creamy"],
+    rating: 4.6,
+    intro:
+      "Pavlova is a light dessert with crisp meringue outside and soft center, topped with cream and fresh fruits.",
+
+    recipe: {
+      prepTime: "15 mins",
+      cookTime: "60 mins",
+      totalTime: "75 mins",
+      difficulty: "Medium",
+      steps: [
+        "Whisk egg whites until stiff peaks form.",
+        "Gradually add sugar and whisk until glossy.",
+        "Fold in cornstarch and vinegar gently.",
+        "Bake at 120°C for 60 minutes. Cool in oven with door slightly open.",
+        "Top with whipped cream and fruits before serving.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 199,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for glossy meringue peaks + fruit topping aesthetics.",
+    },
   },
+
   {
     slug: "lamingtons",
     name: "Lamingtons",
@@ -874,93 +808,38 @@ export const dishes = [
     country: "Australia",
     time: "45-70 mins",
     servings: "6-12",
-    ingredients: ["Sponge cake", "Chocolate", "Coconut", "Sugar", "Butter"],
+    ingredients: [
+      "Sponge cake",
+      "Chocolate",
+      "Coconut",
+      "Butter",
+      "Sugar",
+      "Milk",
+    ],
     taste: ["Sweet", "Chocolatey", "Soft"],
-    rating: 4.0,
+    rating: 4.3,
     intro:
-      "Lamingtons are sponge cake squares dipped in chocolate and coated with coconut for an iconic Aussie treat.",
-    caloriesNote: "Sweet snack dessert",
-    tips: ["Use day-old cake", "Chill before dipping", "Coat quickly for even coverage"],
-    faq: [
-      { q: "Do lamingtons have jam?", a: "Some versions are filled with jam and cream." },
-      { q: "Are they messy?", a: "A little, but worth it!" },
-    ],
-  },
-  {
-    slug: "hangi",
-    name: "Hangi",
-    continent: "oceania",
-    country: "New Zealand",
-    time: "3-6 hrs",
-    servings: "4-10",
-    ingredients: ["Meat", "Potatoes", "Pumpkin", "Vegetables", "Salt", "Herbs"],
-    taste: ["Smoky", "Earthy", "Hearty"],
-    rating: 4.2,
-    intro:
-      "Hangi is a Maori cooking method where food is slow-cooked underground, creating smoky earthy flavors and tenderness.",
-    caloriesNote: "Balanced rustic meal",
-    tips: ["Slow cook for tenderness", "Use root veggies", "Season lightly"],
-    faq: [
-      { q: "Is hangi always underground?", a: "Traditionally yes, but modern versions use ovens." },
-      { q: "What makes it unique?", a: "The smoky earthy flavor from slow steaming." },
-    ],
-  },
-  {
-    slug: "poke-bowl",
-    name: "Poke Bowl",
-    continent: "oceania",
-    country: "Hawaii",
-    time: "15-25 mins",
-    servings: "1-2",
-    ingredients: ["Raw fish", "Rice", "Soy sauce", "Sesame", "Seaweed", "Cucumber", "Avocado"],
-    taste: ["Fresh", "Umami", "Light"],
-    rating: 4.6,
-    intro:
-      "A poke bowl is a Hawaiian dish of seasoned raw fish served over rice with fresh crunchy toppings and sauces.",
-    caloriesNote: "Light, protein-rich",
-    tips: ["Use sushi-grade fish", "Keep chilled", "Balance salty sauces"],
-    faq: [
-      { q: "Is poke like sushi?", a: "Similar ingredients but served as a bowl." },
-      { q: "Can poke be vegetarian?", a: "Yes, tofu or mushroom poke works well." },
-    ],
-  },
-  {
-    slug: "coconut-fish",
-    name: "Coconut Fish",
-    continent: "oceania",
-    country: "Polynesia",
-    time: "25-45 mins",
-    servings: "2-4",
-    ingredients: ["Fish", "Coconut milk", "Lime", "Onion", "Garlic", "Herbs", "Salt"],
-    taste: ["Creamy", "Citrusy", "Light"],
-    rating: 4.4,
-    intro:
-      "Coconut fish is a tropical island dish where fish is gently cooked in coconut milk with lime and herbs for smooth flavor.",
-    caloriesNote: "Healthy seafood meal",
-    tips: ["Don’t boil hard", "Use firm fish", "Finish with lime"],
-    faq: [
-      { q: "Is coconut fish spicy?", a: "Usually mild, but chili can be added." },
-      { q: "What to serve with it?", a: "Rice and fresh salad are great." },
-    ],
-  },
-  {
-    slug: "fish-kumara-chips",
-    name: "Fish & Kumara Chips",
-    continent: "oceania",
-    country: "New Zealand",
-    time: "30-50 mins",
-    servings: "2-3",
-    ingredients: ["Fish", "Kumara (sweet potato)", "Flour", "Oil", "Salt", "Lemon"],
-    taste: ["Crispy", "Sweet-savory", "Comforting"],
-    rating: 4.0,
-    intro:
-      "A New Zealand twist on fish and chips using kumara (sweet potato) fries for extra sweetness and texture.",
-    caloriesNote: "Fried but slightly better than regular fries",
-    tips: ["Cut kumara evenly", "Don’t overcrowd fryer", "Serve with lemon"],
-    faq: [
-      { q: "What is kumara?", a: "It’s a sweet potato variety common in NZ." },
-      { q: "Is it healthier?", a: "Slightly, but still fried so portion matters." },
-    ],
+      "Lamingtons are sponge cake squares dipped in chocolate and coated with coconut, a classic Aussie sweet snack.",
+
+    recipe: {
+      prepTime: "20 mins",
+      cookTime: "25-30 mins",
+      totalTime: "55 mins",
+      difficulty: "Medium",
+      steps: [
+        "Bake or use sponge cake and cut into equal squares.",
+        "Prepare chocolate coating by melting chocolate with butter and milk.",
+        "Dip cake squares in chocolate and coat with coconut immediately.",
+        "Set on rack and let them rest 15 minutes before serving.",
+      ],
+    },
+
+    premiumVideo: {
+      isPremium: true,
+      price: 149,
+      currency: "INR",
+      previewText:
+        "🔒 Unlock AI video for chocolate dip + coconut coating ASMR shots.",
+    },
   },
 ];
- 
