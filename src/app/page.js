@@ -38,7 +38,7 @@ export default function HomePage() {
               Global Recipe Restaurant
             </h1>
             <p className="opacity-80 mt-3 max-w-2xl text-sm sm:text-base">
-              Explor top dishes from every continent. Ingredient-based ratings, clean UI, mobile-first.
+              Explore top dishes from every continent. Ingredient-based ratings, clean UI, mobile-first.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
