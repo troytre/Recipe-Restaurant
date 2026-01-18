@@ -66,6 +66,59 @@ export default function HomePage() {
                 placeholder="Search dish or country..."
                 className="sm:col-span-2 px-4 py-3 rounded-2xl bg-white/5 border border-white/10 outline-none focus:border-white/30"
               />
+                      {/* ✅ Mobile Live Search Popup */}
+{query.trim().length > 0 && (
+  <div className="sm:col-span-2 relative">
+    <div className="absolute left-0 right-0 mt-2 rounded-2xl border border-white/10 bg-black shadow-lg overflow-hidden z-50">
+      <div className="p-3 border-b border-white/10 flex items-center justify-between">
+        <p className="text-xs opacity-70">
+          Showing <b>{filtered.length}</b> results
+        </p>
+        <button
+          onClick={() => setQuery("")}
+          className="text-xs px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 transition"
+        >
+          Clear ✕
+        </button>
+      </div>
+
+      <div className="max-h-72 overflow-auto">
+        {filtered.slice(0, 8).map((d) => (
+          <Link
+            key={d.slug}
+            href={`/dishes/${d.slug}`}
+            className="block px-4 py-3 hover:bg-white/10 transition"
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="font-semibold text-sm">{d.name}</p>
+                <p className="text-xs opacity-70 mt-1">{d.country}</p>
+              </div>
+              <span className="text-xs px-2 py-1 rounded-full bg-white/10">
+                ⭐ {d.rating}
+              </span>
+            </div>
+          </Link>
+        ))}
+
+        {filtered.length === 0 && (
+          <div className="px-4 py-5 text-sm opacity-70">
+            No results found. Try searching “pizza”, “salad”, “thai” etc.
+          </div>
+        )}
+      </div>
+
+      <div className="p-3 border-t border-white/10">
+        <Link
+          href="/dishes"
+          className="text-sm underline opacity-80 hover:opacity-100"
+        >
+          View all dishes →
+        </Link>
+      </div>
+    </div>
+  </div>
+)}
 
               <select
                 value={continent}

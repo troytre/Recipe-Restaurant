@@ -12,7 +12,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-red/70  border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-black border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         <Link href="/" className="text-white font-bold text-lg sm:text-xl">
           Global Recipe Restaurant
