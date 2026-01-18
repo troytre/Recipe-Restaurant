@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { dishes } from "@/data/dishes";
 
+
 export default function HomePage() {
   const [query, setQuery] = useState("");
   const [continent, setContinent] = useState("all");
@@ -50,7 +51,7 @@ export default function HomePage() {
               </Link>
 
               <Link
-                href="/continent/asia"
+                href="/continent/"
                 className="text-center px-5 py-3 rounded-2xl bg-white/10 border border-white/10 hover:bg-white/20 transition"
               >
                 Browse Continents
