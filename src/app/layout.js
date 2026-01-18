@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: {
     default: "Global Recipe Restaurant 🌿 | Veg Dishes Worldwide",
-    template: "%s | Create Next App",
+    template: "%s | Global Recipe Restaurant",
   },
-  description: "Short veg + AI premium mention",
+  description: "Discover veg dishes from all continents with step-by-step recipes, chef tips, and premium AI cooking videos.",
 };
 
 export default function RootLayout({ children }) {
