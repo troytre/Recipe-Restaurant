@@ -51,7 +51,7 @@ export default function HomePage() {
               </Link>
 
               <Link
-                href="/continents/"
+                href="/continent/"
                 className="text-center px-5 py-3 rounded-2xl bg-white/10 border border-white/10 hover:bg-white/20 transition"
               >
                 Browse Continents
